@@ -8,12 +8,13 @@
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
     <title>My JAZZ BAND and tailWind 3</title>
   </head>
-  <body>
+  <body class="container mx-xl columns-9">
     <include src="./views/header.html"></include>
-    <div class="uoc-container">
+
+    <div class="bg-yellow-500 uoc-container">
       <picture>
-        <source srcset="./assets/images/logo.jpg?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.jpg?width=350" alt="My JAZZ Band" class="uoc-logo" />
+        <source srcset="./assets/images/output-onlinejpgtools.png?as=webp&width=350" type="image/webp" />
+        <img src="./assets/images/output-onlinejpgtools.png" alt="My JAZZ Band" class="uoc-logo" />
       </picture>
       <h1 class="uoc-title">Hello, This is my JAZZ Band!</h1>
       <p class="text-3xl font-bold underline">
@@ -23,17 +24,6 @@
       </ul>
       </p>
     </div>
-
-    <div class="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4">
-      <div class="shrink-0">
-        <img class="h-12 w-12" src="../src/assets/images/logo.jpg" alt="ChitChat Logo">
-      </div>
-      <div>
-        <div class="text-xl font-medium text-black">ChitChat</div>
-        <p class="text-slate-500">You have a new message!</p>
-      </div>
-    </div>
-
 
     <include src="./views/footer.html"></include>
     <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
