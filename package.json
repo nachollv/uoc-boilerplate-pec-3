@@ -1,5 +1,5 @@
 {
-  "name": "uoc-boilerplate",
+  "name": "uoc-boilerplate-pec-3",
   "version": "3.5.0",
   "private": true,
   "description": "Boilerplate for Advanced HTML/CSS Tools UOC students",
@@ -26,7 +26,7 @@
     "url": "git+https://github.com/uoc-advanced-html-css/uoc-boilerplate.git"
   },
   "author": {
-    "name": "Jordi Tarrida",
+    "name": "Jordi Tarrida and Ignacio Lladó",
     "email": "jorditarrida@uoc.edu"
   },
   "license": "MIT",
@@ -42,6 +42,7 @@
     "postcss-preset-env": "^7.8.1",
     "posthtml-include": "^1.7.4",
     "rimraf": "^3.0.2",
-    "sharp": "^0.29.1"
+    "sharp": "^0.29.1",
+    "tailwindcss": "^3.2.4"
   }
 }
