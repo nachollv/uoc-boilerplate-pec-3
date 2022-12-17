@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" type="image/x-icon" href="/src/assets/images/favicon/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+    <title>My JAZZ BAND</title>
+  </head>
+  <body>
+
+    <include src="./views/header.html"></include>
+
+     <!--  <form class="container" action="/the_action_page.php"> -->
+
+      <form>
+
+        <div class="mb-3">
+          <label for="InputFirstName" class="form-label">First name</label>
+          <input type="text" class="form-control" id="InputFirstName">
+        </div>
+
+        <div class="mb-3">
+          <label for="InputLastName" class="form-label">Last name</label>
+          <input type="text" class="form-control" id="InputLastName">
+        </div>
+
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        
+        <select class="form-select" id="instruments" name="instruments" aria-label="select instruments list">
+          <option value="none">---Select your instrument---</option>
+          <option value="Trumpet">Trumpet</option>
+          <option value="Drums">Drums</option>
+          <option value="Clarinet">Clarinet</option>
+          <option value="Bassist">Bassist</option>
+        </select>
+
+        <div class="mb-3">
+          <label for="yourSkillsTextarea" class="form-label">Tell us about your skills</label>
+          <textarea class="form-control" placeholder="Which are your skills?"" id="yourSkillsTextarea" rows="3"></textarea>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="wantYesNoCommunications" id="wantCommunications">
+          <label class="form-check-label" for="flexRadioDefault1">
+            Yes, I agree to receive your commercial communications.
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="wantYesNoCommunications" id="dontWantCommunications" checked>
+          <label class="form-check-label" for="flexRadioDefault2">
+            No, I dont agree to receive your commercial communications.
+          </label>
+        </div>
+
+        <div class="mb-3 form-check form-switch">
+          <input type="checkbox" class="form-check-input" id="termsAndConditions" role="switch">
+          <label class="form-check-label" for="termsAndConditions">I accept the terms and the conditions</label>
+        </div>
+
+        <button type="submit" class="btn btn-primary"
+        data-bs-toggle="tooltip" data-bs-placement="top"
+                data-bs-custom-class="custom-tooltip"
+                data-bs-title="Send us your details and you will be promptly informed of our latest concerts.">Submit</button>
+      </form>
+
+    <include src="./views/newsletter.html"></include>
+    <include src="./views/footer.html"></include> 
+    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+  
+  </body>
+</html>
