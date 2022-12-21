@@ -6,37 +6,46 @@
     <meta name="viewport" content="width=device-width">
     <link rel="icon" type="image/x-icon" href="/src/assets/images/favicon/favicon.ico">
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>My JAZZ BAND</title>
+    <title>My JAZZ BAND with tailWind 3</title>
   </head>
-  <body>
+  <body class="w-9/12 mx-auto bg-uoc-masterbrand text-uoc-corporate">
 
     <include src="./views/header.html"></include>
 
-     <!--  <form class="container" action="/the_action_page.php"> -->
-
-      <form>
+      <form class="my-4">
 
         <div class="mb-3">
           <label for="InputFirstName" class="form-label">First name</label>
-          <input type="text" class="form-control" id="InputFirstName">
+          <input type="text" class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400
+          focus:outline-none focus:border-uoc-corporate focus:ring-1 focus:ring-uoc-corporate
+          disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none
+          invalid:border-pink-500 invalid:text-pink-600 hover:bg-uoc-corporate hover:border-transparent
+          focus:invalid:border-pink-500 focus:invalid:ring-pink-500" id="InputFirstName">
         </div>
 
         <div class="mb-3">
           <label for="InputLastName" class="form-label">Last name</label>
-          <input type="text" class="form-control" id="InputLastName">
+          <input type="text" class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400
+          focus:outline-none focus:border-uoc-corporate focus:ring-1 focus:ring-uoc-corporate
+          disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none
+          invalid:border-pink-500 invalid:text-pink-600 hover:bg-uoc-corporate hover:border-transparent
+          focus:invalid:border-pink-500 focus:invalid:ring-pink-500" id="InputLastName">
         </div>
 
         <div class="mb-3">
           <label for="exampleInputEmail1" class="form-label">Email address</label>
-          <input type="email" class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400
-          focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500
+          <input type="email" class="mt-1 block w-full px-3 py-3 bg-white border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400
+          focus:outline-none focus:border-uoc-corporate focus:ring-1 focus:ring-uoc-corporate
           disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none
-          invalid:border-pink-500 invalid:text-pink-600
+          invalid:border-pink-500 invalid:text-pink-600 hover:bg-uoc-corporate hover:border-transparent
           focus:invalid:border-pink-500 focus:invalid:ring-pink-500" id="exampleInputEmail1" aria-describedby="emailHelp">
           <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
         </div>
         
-        <select class="form-select" id="instruments" name="instruments" aria-label="select instruments list">
+        <select class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400
+        hover:bg-uoc-corporate hover:border-transparent
+        focus:outline-none focus:border-uoc-corporate focus:ring-1 focus:ring-uoc-corporate" 
+        id="instruments" name="instruments" aria-label="select instruments list">
           <option value="none">---Select your instrument---</option>
           <option value="Trumpet">Trumpet</option>
           <option value="Drums">Drums</option>
@@ -46,28 +55,34 @@
 
         <div class="mb-3">
           <label for="yourSkillsTextarea" class="form-label">Tell us about your skills</label>
-          <textarea class="form-control" placeholder="Which are your skills?"" id="yourSkillsTextarea" rows="3"></textarea>
+          <textarea class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400
+          focus:outline-none focus:border-uoc-corporate focus:ring-1 focus:ring-uoc-corporate
+          disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none
+          invalid:border-pink-500 invalid:text-pink-600
+          focus:invalid:border-pink-500 focus:invalid:ring-pink-500" placeholder="Which are your skills?"" id="yourSkillsTextarea" rows="3"></textarea>
         </div>
 
         <div class="form-check">
-          <input class="form-check-input" type="radio" name="wantYesNoCommunications" id="wantCommunications">
+          <input class="" type="radio" name="wantYesNoCommunications" id="wantCommunications">
           <label class="form-check-label" for="flexRadioDefault1">
             Yes, I agree to receive your commercial communications.
           </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="radio" name="wantYesNoCommunications" id="dontWantCommunications" checked>
+          <input class="" type="radio" name="wantYesNoCommunications" id="dontWantCommunications" checked>
           <label class="form-check-label" for="flexRadioDefault2">
             No, I dont agree to receive your commercial communications.
           </label>
         </div>
 
         <div class="mb-3 form-check form-switch">
-          <input type="checkbox" class="form-check-input" id="termsAndConditions" role="switch">
+          <input type="checkbox" class="" id="termsAndConditions" role="switch">
           <label class="form-check-label" for="termsAndConditions">I accept the terms and the conditions</label>
         </div>
 
-        <button type="submit" class="px-4 py-1 text-sm text-purple-600 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2"
+        <button type="submit" class="px-4 py-1 text-sm text-uoc-corporate font-semibold rounded-full border 
+                                    border-uoc-corporate hover:text-white hover:bg-uoc-corporate hover:border-transparent 
+                                    focus:outline-none focus:ring-2 focus:ring-uoc-corporate focus:ring-offset-2"
         data-bs-toggle="tooltip" data-bs-placement="top"
                 data-bs-custom-class="custom-tooltip"
                 data-bs-title="Send us your details and you will be promptly informed of our latest concerts.">Submit</button>

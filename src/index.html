@@ -1,29 +1,32 @@
 <!DOCTYPE html>
 
-<html>
+<html class="mx-auto ">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <link rel="icon" type="image/x-icon" href="/src/assets/images/favicon/favicon.ico">
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>My JAZZ BAND and tailWind 3</title>
+    <title>My JAZZ BAND with tailWind 3</title>
   </head>
-  <body class="container mx-xl columns-9">
-    <include src="./views/header.html"></include>
 
-    <div class="bg-yellow-500 uoc-container">
-      <picture>
-        <source srcset="./assets/images/output-onlinejpgtools.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/output-onlinejpgtools.png" alt="My JAZZ Band" class="uoc-logo" />
-      </picture>
-      <h1 class="uoc-title">Hello, This is my JAZZ Band!</h1>
-      <p class="text-3xl font-bold underline">
-        <ul role="list">
-        <li class="group/item hover:bg-slate-100 ..."><a class="group/edit hover:bg-slate-200 group-hover/item:visible ..." href="./page-two.html"><span class="group-hover/edit:text-gray-700 ...">Members</span></a></li>
-        <li class="group/item hover:bg-slate-100 ..."><a class="group/edit hover:bg-slate-200 group-hover/item:visible ..." href="./page-four.html"><span class="group-hover/edit:text-gray-700 ...">Contact</span></a></li>
-      </ul>
+  <body class="w-9/12 mx-auto bg-uoc-masterbrand text-uoc-corporate">
+    <include src="./views/header.html"></include>
+    <section class="grid grid-rows-3 bg-yellow-500 rounded-lg my-4 p-4">
+
+      <h1 class="text-5xl leading-loose font-bold underline text-center">Hello, This is my JAZZ Band!</h1>
+        <picture class="">
+          <source srcset="./assets/images/output-onlinejpgtools.png?as=webp&width=350" type="image/webp" />
+          <img src="./assets/images/output-onlinejpgtools.png" alt="My JAZZ Band" class="" title="My JAZZ Band Trumpet"/>
+        </picture> 
+
+      <p class="">
+        <ul class="text-center">
+          <li class="group/item hover:bg-slate-100"><a href="./page-two.html">Members</a></li>
+          <li class="group/item hover:bg-slate-100"><a href="./page-four.html">Contact</a></li>
+        </ul>
       </p>
-    </div>
+
+    </section>
 
     <include src="./views/footer.html"></include>
     <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
