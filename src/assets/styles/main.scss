@@ -28,6 +28,35 @@
  * It's a best practice to use a different partial for each page
  */
 
+/**
+ * 
+ */
+.button {
+  @apply px-4 py-1 text-sm text-uoc-corporate font-semibold rounded-full border border-uoc-corporate;
+}
+
+.button-focus { 
+  @apply focus:outline-none focus:ring-2 focus:ring-uoc-corporate focus:ring-offset-2;
+}
+
+.button-hover {
+  @apply hover:text-white hover:bg-uoc-corporate hover:border-transparent;
+}
+
+.input-field {
+  @apply mt-1 block w-full px-3 py-3 bg-white border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400
+  disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none
+  invalid:border-pink-500 invalid:text-pink-600;
+}
+
+.field-hover {
+  @apply hover:bg-uoc-corporate hover:border-transparent;
+}
+
+.field-focus {
+  @apply focus:outline-none focus:border-uoc-corporate focus:ring-1 focus:ring-uoc-corporate focus:invalid:border-pink-500 focus:invalid:ring-pink-500;
+}
+
 /* @import "layouts/home"; */
  
 

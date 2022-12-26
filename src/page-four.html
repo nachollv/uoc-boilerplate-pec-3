@@ -16,35 +16,22 @@
 
         <div class="mb-3">
           <label for="InputFirstName" class="form-label">First name</label>
-          <input type="text" class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400
-          focus:outline-none focus:border-uoc-corporate focus:ring-1 focus:ring-uoc-corporate
-          disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none
-          invalid:border-pink-500 invalid:text-pink-600 hover:bg-uoc-corporate hover:border-transparent
-          focus:invalid:border-pink-500 focus:invalid:ring-pink-500" id="InputFirstName" placeholder="Your name">
+          <input type="text" class="input-field field-hover field-focus" id="InputFirstName" placeholder="Your name">
         </div>
 
         <div class="mb-3">
           <label for="InputLastName" class="form-label">Last name</label>
-          <input type="text" class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400
-          focus:outline-none focus:border-uoc-corporate focus:ring-1 focus:ring-uoc-corporate
-          disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none
-          invalid:border-pink-500 invalid:text-pink-600 hover:bg-uoc-corporate hover:border-transparent
-          focus:invalid:border-pink-500 focus:invalid:ring-pink-500" id="InputLastName" placeholder="Your first name">
+          <input type="text" class="input-field field-hover field-focus" id="InputLastName" placeholder="Your first name">
         </div>
 
         <div class="mb-3">
           <label for="exampleInputEmail1" class="form-label">Email address</label>
-          <input type="email" class="mt-1 block w-full px-3 py-3 bg-white border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400
-          focus:outline-none focus:border-uoc-corporate focus:ring-1 focus:ring-uoc-corporate
-          disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none
-          invalid:border-pink-500 invalid:text-pink-600 hover:bg-uoc-corporate hover:border-transparent
-          focus:invalid:border-pink-500 focus:invalid:ring-pink-500" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your email address">
+          <input type="email" class="input-field field-hover field-focus" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your email address">
           <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
         </div>
         
-        <select class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400
-        hover:bg-uoc-corporate hover:border-transparent
-        focus:outline-none focus:border-uoc-corporate focus:ring-1 focus:ring-uoc-corporate" 
+        <select class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 
+                      rounded-md text-sm shadow-sm placeholder-slate-400 field-hover field-focus" 
         id="instruments" name="instruments" aria-label="select instruments list" placeholder="Select your preferred Jazz instrument">
           <option value="none">---Select your instrument---</option>
           <option value="Trumpet">Trumpet</option>
@@ -56,11 +43,9 @@
         <div class="mb-3">
           <label for="yourSkillsTextarea" class="form-label">Tell us about your skills</label>
           <textarea class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400
-          focus:outline-none focus:border-uoc-corporate focus:ring-1 focus:ring-uoc-corporate
-          hover:bg-uoc-corporate hover:border-transparent
           disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none
-          invalid:border-pink-500 invalid:text-pink-600
-          focus:invalid:border-pink-500 focus:invalid:ring-pink-500" placeholder="Which are your skills?" id="yourSkillsTextarea" rows="3"></textarea>
+          invalid:border-pink-500 invalid:text-pink-600 field-hover field-focus" 
+          placeholder="Which are your skills?" id="yourSkillsTextarea" rows="3"></textarea>
         </div>
 
         <div class="form-check">
@@ -81,9 +66,7 @@
           <label class="form-check-label" for="termsAndConditions">I accept the terms and the conditions</label>
         </div>
 
-        <button type="submit" class="px-4 py-1 text-sm text-uoc-corporate font-semibold rounded-full border 
-                                    border-uoc-corporate hover:text-white hover:bg-uoc-corporate hover:border-transparent 
-                                    focus:outline-none focus:ring-2 focus:ring-uoc-corporate focus:ring-offset-2"
+        <button type="submit" class="button button-hover button-focus"
         data-bs-toggle="tooltip" data-bs-placement="top"
                 data-bs-custom-class="custom-tooltip"
                 data-bs-title="Send us your details and you will be promptly informed of our latest concerts.">Submit</button>
